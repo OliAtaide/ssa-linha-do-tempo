@@ -51,14 +51,17 @@
 
     .line {
         width: 12px;
-        height: 100vh;
+        height: 100%;
         background: #BC3B3B;
-        position: absolute;
+        position: fixed;
         left: calc(50% - 6px);
+        top: 0;
         z-index: -10;
     }
-
     
+    footer{
+        background-color: #F0F0F0;
+    }
 </style>
 
 <body>
@@ -69,6 +72,10 @@
     <div class="container my-5">
         
     </div>
+
+    <footer class="d-flex justify-content-center">
+        <img class="img-fluid" src="logos.png" alt="">
+    </footer>
 </body>
 
 <script src="script.js"></script>

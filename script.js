@@ -22,7 +22,115 @@ data = [
                 MEC e MS – sigilo e informação HIV na escola`,
         bg_color: '#3BBC6A',
         border_color: '#2C8D50',
-    }
+    },
+    {
+        ano: 1993,
+        texto: `Normas de atenção à saúde integral do adolescente Conferência Internacional de Direitos Humanos – recomenda desenvolvimento de personalidade de adolescentes com proteção e segurança`,
+        bg_color: '#C9629D',
+        border_color: '#BC3B84',
+    },
+    {
+        ano: 1996,
+        texto: `Programa Saúde do Adolescente Bases Programáticas`,
+        bg_color: '#89BAD7',
+        border_color: '#62A3C9',
+    },
+    {
+        ano: 1999,
+        texto: `Resolução nº 001/1999, Conselho Federal de Psicologia`,
+        bg_color: '#D4D17B',
+        border_color: '#D4D17B',
+    },
+    {
+        ano: 2000,
+        texto: `Manual para atendimento de adolescentes grávidas`,
+        bg_color: '#C96262',
+        border_color: '#BC3B3B',
+    },
+    {
+        ano: 2005,
+        texto: `Programa de Saúde Integral de Adolescentes e Jovens`,
+        bg_color: '#3BBC6A',
+        border_color: '#2C8D50',
+    },
+    {
+        ano: 2006,
+        texto: `Lei Maria da Penha4
+                <br/>
+                Cartilha sobre Direitos Sexuais e Direitos Reprodutivos/MS`,
+        bg_color: '#C9629D',
+        border_color: '#BC3B84',
+    },
+    {
+        ano: 2007,
+        texto: `Plano Nacional do Enfrentamento à Violência Sexual InfantoJuvenil
+                <br/>
+                Programa Saúde na Escola
+                <br/>
+                Marco teórico e referencial saúde sexual e saúde reprodutiva de adolescentes e jovens
+                <br/>
+                Marco legal saúde, um direito de adolescentes`,
+        bg_color: '#89BAD7',
+        border_color: '#62A3C9',
+    },
+    {
+        ano: 2009,
+        texto: `Caderneta de Saúde (de menino e de menina)`,
+        bg_color: '#D4D17B',
+        border_color: '#D4D17B',
+    },
+    {
+        ano: 2010,
+        texto: `Orientações Básicas de Atenção Integral à Saúde de Adolescentes nas Escolas e Unidades Básicas de Saúde
+                <br/>
+                Diretrizes nacionais para a atenção integral à saúde de adolescentes e jovens na promoção, proteção e recuperação da saúde`,
+        bg_color: '#C96262',
+        border_color: '#BC3B3B',
+    },
+    {
+        ano: 2011,
+        texto: `STF reconhece união civil entre pessoas de mesmo sexo
+                <br/>
+                Atenção humanizada ao abortamento – norma técnica
+                <br/>
+                Aspectos jurídicos do atendimento às vítimas de violência sexual
+                <br/>
+                Atenção Integral para Mulheres e Adolescentes em Situação de Violência Doméstica e Sexual Matriz Pedagógica para Formação de Redes`,
+        bg_color: '#3BBC6A',
+        border_color: '#2C8D50',
+    },
+    {
+        ano: 2012,
+        texto: `Prevenção e tratamento dos agravos resultantes da violência sexual contra mulheres e adolescentes
+                <br/>
+                Carta de Intenções sobre a Participação das Juventudes da América Latina em Saúde Pública
+                <br/>
+                Protocolo para utilização do levonorgestrel
+                <br/>
+                Cooperação com Guiné Bissau na atenção à saúde de mulheres e adolescentes em situação de violência baseada em gênero`,
+        bg_color: '#C9629D',
+        border_color: '#BC3B84',
+    },
+    {
+        ano: 2013,
+        texto: `Orientações básicas de atenção integral à saúde de adolescentes nas escolas e unidades básicas de saúde
+                <br/>
+                O SUS e a Saúde Sexual e Reprodutiva de Adolescentes e Jovens no Brasil
+                <br/>
+                Seminário Internacional Saúde, Adolescência e Juventude
+                <br/>
+                Orientações para o Atendimento à Saúde do Adolescente (da menina e do menino)`,
+        bg_color: '#89BAD7',
+        border_color: '#62A3C9',
+    },
+    {
+        ano: 2014,
+        texto: `Metodologias para o Cuidado de Crianças, Adolescentes e suas Famílias em Situação de Violências
+                <br/>
+                Oficina o SUS e o Estatuto da Juventude`,
+        bg_color: '#D4D17B',
+        border_color: '#D4D17B',
+    },
 ]
 
 for (let i = 0; i < data.length; i++) {
@@ -69,7 +177,7 @@ for (let i = 0; i < data.length; i++) {
         balloon = "<div class='balloon' id='" + data[i].ano + "'\><div class='d-flex align-items-center'>"
                     + right + content + "</div></div>"
         $('.container').append(
-            "<div class='row align-items-center' ><div class='col'></div><div class='col col-2'>"
+            "<div class='row my-5 align-items-center' ><div class='col'></div><div class='col col-2'>"
             + button + "</div><div class='col'>"
             + balloon + "</div></div>"
         )
