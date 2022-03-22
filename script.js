@@ -29,17 +29,8 @@ for (let i = 0; i < data.length; i++) {
     row = "<div class='row align-items-center' ></div>";
     
 
-    content = `
-        
-                <div class="content rounded p-2"
-                style="border: 3px solid ` + data[i].border_color + `;">
-                    `
-        +
-        data[i].texto
-        +
-        `
-                </div>
-            `
+    content = "<div class='content rounded p-2' style='border: 3px solid"
+    + data[i].border_color + ";'>" + data[i].texto + "</div>";
             
     left = `
         <svg fill="`+ data[i].border_color + `" width="3.9688mm" height="5.2917mm" version="1.1" viewBox="0 0 3.9688 5.2917"
@@ -48,7 +39,7 @@ for (let i = 0; i < data.length; i++) {
                 d="m0.28493 417.03-9.4e-7 -395.25 342.3 197.63z"
                 style="paint-order:stroke fill markers" />
         </svg>
-        `
+        `;
 
     right = `
         <svg fill="`+ data[i].border_color + `" width="3.9688mm" height="5.2917mm" version="1.1" viewBox="0 0 3.9688 5.2917"
@@ -57,24 +48,16 @@ for (let i = 0; i < data.length; i++) {
                 <path transform="matrix(-.011594 0 0 .013388 2.6491 -.29155)" d="m0.28493 417.03-9.4e-7 -395.25 342.3 197.63z" style="paint-order:stroke fill markers"/>
             </g>
         </svg>
-    `
+    `;
 
-    button = `
-        <button class="label rounded-pill text-white w-100"
-        style="border: 3px solid ` + data[i].border_color + `;
-        background: ` + data[i].bg_color + `;"
-        data-color="#D4D17B" data-bg="#C9C55A">
-        `
-        +
-        data[i].ano
-        +
-        `
-        </button>
-        `
+    button = 
+        "<button class='label rounded-pill text-white w-100' data-target='"
+        + data[i].ano + "' style='border: 3px solid " + data[i].border_color +
+        "; background: " + data[i].bg_color + ";'>" + data[i].ano + "</button>";
 
 
     if ((i % 2) == 0) {
-        balloon = "<div class='balloon'><div class='d-flex align-items-center'>"
+        balloon = "<div class='balloon' id='" + data[i].ano + "'><div class='d-flex align-items-center'>"
                     + content + left + "</div></div>"
         $('.container').append(
             "<div class='row align-items-center' ><div class='col'>"
@@ -83,7 +66,7 @@ for (let i = 0; i < data.length; i++) {
         )
     }
     else {
-        balloon = "<div class='balloon'><div class='d-flex align-items-center'>"
+        balloon = "<div class='balloon' id='" + data[i].ano + "'\><div class='d-flex align-items-center'>"
                     + right + content + "</div></div>"
         $('.container').append(
             "<div class='row align-items-center' ><div class='col'></div><div class='col col-2'>"
@@ -105,5 +88,6 @@ data.forEach(d => {
 $('.balloon').hide();
 
 $('.label').click(function () {
-    $('.balloon').fadeIn(200);
+    target = $(this).data('target');
+    $('#' + target).fadeIn(200);
 })
