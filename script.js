@@ -2,7 +2,7 @@ data = [
     {
         ano: 1983,
         texto: `Convenção dos Direitos da Criança
-                <br/>
+                <br/><br/>
                 Programa de Saúde do Adolescente`,
         bg_color: '#D4D17B',
         border_color: '#C9C55A',
@@ -10,7 +10,7 @@ data = [
     {
         ano: 1990,
         texto: `Estatuto da Criança e do Adolescente
-                <br/>
+                <br/><br/>
                 OMS Retira Homossexualidade da CID`,
         bg_color: '#C96262',
         border_color: '#BC3B3B',
@@ -18,14 +18,16 @@ data = [
     {
         ano: 1992,
         texto: `Portaria Interministerial nº 796,
-                <br/>
+                <br/><br/>
                 MEC e MS – sigilo e informação HIV na escola`,
         bg_color: '#3BBC6A',
         border_color: '#2C8D50',
     },
     {
         ano: 1993,
-        texto: `Normas de atenção à saúde integral do adolescente Conferência Internacional de Direitos Humanos – recomenda desenvolvimento de personalidade de adolescentes com proteção e segurança`,
+        texto: `Normas de atenção à saúde integral do adolescente 
+                <br/><br/>
+                Conferência Internacional de Direitos Humanos – recomenda desenvolvimento de personalidade de adolescentes com proteção e segurança`,
         bg_color: '#C9629D',
         border_color: '#BC3B84',
     },
@@ -56,7 +58,7 @@ data = [
     {
         ano: 2006,
         texto: `Lei Maria da Penha4
-                <br/>
+                <br/><br/>
                 Cartilha sobre Direitos Sexuais e Direitos Reprodutivos/MS`,
         bg_color: '#C9629D',
         border_color: '#BC3B84',
@@ -64,11 +66,11 @@ data = [
     {
         ano: 2007,
         texto: `Plano Nacional do Enfrentamento à Violência Sexual InfantoJuvenil
-                <br/>
+                <br/><br/>
                 Programa Saúde na Escola
-                <br/>
+                <br/><br/>
                 Marco teórico e referencial saúde sexual e saúde reprodutiva de adolescentes e jovens
-                <br/>
+                <br/><br/>
                 Marco legal saúde, um direito de adolescentes`,
         bg_color: '#89BAD7',
         border_color: '#62A3C9',
@@ -82,7 +84,7 @@ data = [
     {
         ano: 2010,
         texto: `Orientações Básicas de Atenção Integral à Saúde de Adolescentes nas Escolas e Unidades Básicas de Saúde
-                <br/>
+                <br/><br/>
                 Diretrizes nacionais para a atenção integral à saúde de adolescentes e jovens na promoção, proteção e recuperação da saúde`,
         bg_color: '#C96262',
         border_color: '#BC3B3B',
@@ -90,11 +92,11 @@ data = [
     {
         ano: 2011,
         texto: `STF reconhece união civil entre pessoas de mesmo sexo
-                <br/>
+                <br/><br/>
                 Atenção humanizada ao abortamento – norma técnica
-                <br/>
+                <br/><br/>
                 Aspectos jurídicos do atendimento às vítimas de violência sexual
-                <br/>
+                <br/><br/>
                 Atenção Integral para Mulheres e Adolescentes em Situação de Violência Doméstica e Sexual Matriz Pedagógica para Formação de Redes`,
         bg_color: '#3BBC6A',
         border_color: '#2C8D50',
@@ -102,11 +104,11 @@ data = [
     {
         ano: 2012,
         texto: `Prevenção e tratamento dos agravos resultantes da violência sexual contra mulheres e adolescentes
-                <br/>
+                <br/><br/>
                 Carta de Intenções sobre a Participação das Juventudes da América Latina em Saúde Pública
-                <br/>
+                <br/><br/>
                 Protocolo para utilização do levonorgestrel
-                <br/>
+                <br/><br/>
                 Cooperação com Guiné Bissau na atenção à saúde de mulheres e adolescentes em situação de violência baseada em gênero`,
         bg_color: '#C9629D',
         border_color: '#BC3B84',
@@ -114,11 +116,11 @@ data = [
     {
         ano: 2013,
         texto: `Orientações básicas de atenção integral à saúde de adolescentes nas escolas e unidades básicas de saúde
-                <br/>
+                <br/><br/>
                 O SUS e a Saúde Sexual e Reprodutiva de Adolescentes e Jovens no Brasil
                 <br/>
                 Seminário Internacional Saúde, Adolescência e Juventude
-                <br/>
+                <br/><br/>
                 Orientações para o Atendimento à Saúde do Adolescente (da menina e do menino)`,
         bg_color: '#89BAD7',
         border_color: '#62A3C9',
@@ -126,7 +128,7 @@ data = [
     {
         ano: 2014,
         texto: `Metodologias para o Cuidado de Crianças, Adolescentes e suas Famílias em Situação de Violências
-                <br/>
+                <br/><br/>
                 Oficina o SUS e o Estatuto da Juventude`,
         bg_color: '#D4D17B',
         border_color: '#D4D17B',
@@ -184,14 +186,6 @@ for (let i = 0; i < data.length; i++) {
     }
 
 }
-
-data.forEach(d => {
-
-
-
-
-
-});
 
 $('.balloon').hide();
 
