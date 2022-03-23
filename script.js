@@ -57,7 +57,7 @@ data = [
     },
     {
         ano: 2006,
-        texto: `Lei Maria da Penha4
+        texto: `Lei Maria da Penha
                 <br/><br/>
                 Cartilha sobre Direitos Sexuais e Direitos Reprodutivos/MS`,
         bg_color: '#C9629D',
@@ -137,11 +137,11 @@ data = [
 
 for (let i = 0; i < data.length; i++) {
     row = "<div class='row align-items-center' ></div>";
-    
+
 
     content = "<div class='content rounded p-2' style='border: 3px solid "
-    + data[i].border_color + "; background-color: white;'>" + data[i].texto + "</div>";
-            
+        + data[i].border_color + "; background-color: white;'>" + data[i].texto + "</div>";
+
     left = `
         <svg fill="`+ data[i].border_color + `" width="3.9688mm" height="5.2917mm" version="1.1" viewBox="0 0 3.9688 5.2917"
             xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +160,7 @@ for (let i = 0; i < data.length; i++) {
         </svg>
     `;
 
-    button = 
+    button =
         "<button class='label rounded-pill text-white w-100' data-target='"
         + data[i].ano + "' style='border: 3px solid " + data[i].border_color +
         "; background: " + data[i].bg_color + ";'>" + data[i].ano + "</button>";
@@ -168,7 +168,7 @@ for (let i = 0; i < data.length; i++) {
 
     if ((i % 2) == 0) {
         balloon = "<div class='balloon' id='" + data[i].ano + "'><div class='d-flex align-items-center'>"
-                    + content + left + "</div></div>"
+            + content + left + "</div></div>"
         $('.container').append(
             "<div class='row align-items-center' ><div class='col'>"
             + balloon + "</div><div class='col col-sm-2'>"
@@ -177,7 +177,7 @@ for (let i = 0; i < data.length; i++) {
     }
     else {
         balloon = "<div class='balloon' id='" + data[i].ano + "'\><div class='d-flex align-items-center'>"
-                    + right + content + "</div></div>"
+            + right + content + "</div></div>"
         $('.container').append(
             "<div class='row my-5 align-items-center' ><div class='col'></div><div class='col col-sm-2'>"
             + button + "</div><div class='col'>"
@@ -187,9 +187,9 @@ for (let i = 0; i < data.length; i++) {
 
 }
 
-$('.balloon').hide();
+$('.balloon').css('visibility', 'hidden');
 
 $('.label').click(function () {
     target = $(this).data('target');
-    $('#' + target).fadeIn(200);
+    $('#' + target).css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 });
 })
