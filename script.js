@@ -17,9 +17,7 @@ data = [
     },
     {
         ano: 1992,
-        texto: `Portaria Interministerial nº 796,
-                <br/><br/>
-                MEC e MS – sigilo e informação HIV na escola`,
+        texto: `Portaria Interministerial nº 796, MEC e MS – sigilo e informação HIV na escola`,
         bg_color: '#3BBC6A',
         border_color: '#2C8D50',
     },
