@@ -38,10 +38,14 @@ body {
 nav {
     height: 300px;
     background: #E09173;
-    font-weight: 700;
-    font-size: 32px;
     text-shadow: -2px 4px 4px rgba(0, 0, 0, 0.5);
     border-bottom: 50px solid #BC3B3B;
+}
+
+nav h1{
+    
+    font-weight: 700;
+    font-size: 32px;
 }
 
 .line {

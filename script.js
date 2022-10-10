@@ -4,8 +4,8 @@ data = [
         texto: `Convenção dos Direitos da Criança
                 <br/><br/>
                 Programa de Saúde do Adolescente`,
-        bg_color: '#D4D17B',
-        border_color: '#C9C55A',
+        bg_color: '#E4B1CE',
+        border_color: '#D789B5',
     },
     {
         ano: 1990,
@@ -38,8 +38,8 @@ data = [
     {
         ano: 1999,
         texto: `Resolução nº 001/1999, Conselho Federal de Psicologia`,
-        bg_color: '#D4D17B',
-        border_color: '#D4D17B',
+        bg_color: '#E4B1CE',
+        border_color: '#D789B5',
     },
     {
         ano: 2000,
@@ -76,8 +76,8 @@ data = [
     {
         ano: 2009,
         texto: `Caderneta de Saúde (de menino e de menina)`,
-        bg_color: '#D4D17B',
-        border_color: '#D4D17B',
+        bg_color: '#E4B1CE',
+        border_color: '#D789B5',
     },
     {
         ano: 2010,
@@ -128,8 +128,8 @@ data = [
         texto: `Metodologias para o Cuidado de Crianças, Adolescentes e suas Famílias em Situação de Violências
                 <br/><br/>
                 Oficina o SUS e o Estatuto da Juventude`,
-        bg_color: '#D4D17B',
-        border_color: '#D4D17B',
+        bg_color: '#E4B1CE',
+        border_color: '#D789B5',
     },
 ]
 
@@ -167,7 +167,7 @@ for (let i = 0; i < data.length; i++) {
     if ((i % 2) == 0) {
         balloon = "<div class='balloon' id='" + data[i].ano + "'><div class='d-flex align-items-center'>"
             + content + left + "</div></div>"
-        $('.container').append(
+        $('.linha-do-tempo').append(
             "<div class='row align-items-center' ><div class='col'>"
             + balloon + "</div><div class='col col-sm-2'>"
             + button + "</div><div class='col'></div></div>"
@@ -176,7 +176,7 @@ for (let i = 0; i < data.length; i++) {
     else {
         balloon = "<div class='balloon' id='" + data[i].ano + "'\><div class='d-flex align-items-center'>"
             + right + content + "</div></div>"
-        $('.container').append(
+        $('.linha-do-tempo').append(
             "<div class='row my-5 align-items-center' ><div class='col'></div><div class='col col-sm-2'>"
             + button + "</div><div class='col'>"
             + balloon + "</div></div>"
